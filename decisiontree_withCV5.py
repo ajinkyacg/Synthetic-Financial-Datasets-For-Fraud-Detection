@@ -87,7 +87,7 @@ print(confusion_matrix(y_test, y_pred))
 
 #Cross validation accuracy score wiht cv = 5
 from sklearn.model_selection import cross_val_score
-clf = DecisionTreeClassifier(max_depth=2, random_state=1)
+clf = DecisionTreeClassifier(max_depth=3, random_state=1)
 scores = cross_val_score(clf, X_train, y_train, cv=5)
 print('Cross validation confisuion matrix wiht cv = 5')
 print([s for s in scores])
